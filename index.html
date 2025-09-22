@@ -14,12 +14,19 @@
     <title>Introduction</title>
 </head>
 <body>
-    <section id="interests"></section>
-        <h1>Introduction</h1>
-        <h2>Summary</h2>
-        <p>My name is Evan Delanty and I'm a senior, fulltime Computer Science student at Gonzaga University!</p>
-        <p>Below is a simple CV showing my project and work experience built during my time at school.</p>
-        <img id="personalImage" src="resources/CV_Img.jpeg" alt="Photo of Myself (Evan Delanty)">
+    <h1 class="header">Introduction</h1>
+    <section id="profile">
+        <div id="summaryFlex">
+            <div id="summaryText" >
+                <h2 class="header">Summary</h2>
+                <div class="paragraphs">
+                    <p>My name is Evan Delanty and I'm a senior, fulltime Computer Science student at Gonzaga University! Below is a simple CV showing my project and work experience built during my time at school.</p>
+                </div>
+            </div>
+            <div id="summaryImage">
+                <img id="personalImage" src="resources/CV_Img.jpeg" alt="Photo of Myself (Evan Delanty)">
+            </div>
+        </div>
         <h3>Technical Skills:</h3> <!--Skills Lists-->
         <div id="technical">
             <ul>
@@ -40,14 +47,14 @@
             </ul>
         </div>
         <h3>Non-Techincal Interests:</h3>
-        <div id="non-technical">
+        <div id="nonTechincal">
             <ul>
                 <li>Bouldering, Biking, Cooking, Golf, Tennis, Longboarding, and Gaming.</li>
             </ul>
         </div>
     </section>
     <!-- Education Section -->
-    <section id="education">
+    <div id="education">
         <!--Education Table-->
         <table>
             <caption><strong><em>Education</em></strong></caption>
@@ -67,9 +74,9 @@
                 <td>September 2018 - June 2022</td>
             </tr>
         </table>
-    </section>
+    </div>
     <!-- Career Section -->
-    <section id="career">
+    <div id="career">
         <table id="projects">
             <caption><strong><em>Favorite Projects</em></strong></caption>
             <tr>
@@ -106,14 +113,14 @@
                 <td>2014 - 2024</td>
             </tr>
         </table>
-    </section>
+    </div>
     <!-- Interests Section -->
-    <section id="interests">
+    <div id="interests">
         <h1>Hobbies and Interests</h1>
         <ol type="I">
             <li>Biking</li>
-            
-            <li><p>Bouldering</p>
+            <li>
+            <p>Bouldering</p>
                 <a href="https://www.gettyimages.com/photos/round-boulder">
                     <img src="resources/boulder.jpg" alt="Image of a Boulder" width="100" height="100">
                 </a>
@@ -124,6 +131,6 @@
             <li>Longboarding</li>
             <li>Gaming</li>
         </ol>
-    </section>
+    </div>
 </body>
 </html>

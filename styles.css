@@ -1,3 +1,7 @@
+body {
+    background: radial-gradient(circle, linen, burlywood);
+}
+
 table {
     border: solid black 2px; 
     border-spacing: 15px; 
@@ -5,8 +9,39 @@ table {
 }
 
 #personalImage {
-    border: solid black 3px; 
-    border-radius: 10pt;
+    border: solid #ddd 3px;
+    border-radius: 5%;
     width: 150px;
     height: 225px;
+}
+
+.header {
+    text-align: center;
+}
+
+.paragraphs {
+    background-color: oldlace;
+    border: 5px solid peru;
+    padding: 2rem;
+    border-radius: 4px;
+    font-size: larger;
+    text-align: center;
+    text-shadow: 5px 5px 1rem;
+}
+
+#summaryFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#summaryText {
+    flex: 0 0 50%;
+}
+
+#summaryImage {
+    display: flex;
+    justify-content: center;
+    flex: auto 60% 30%;
 }

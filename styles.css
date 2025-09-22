@@ -1,5 +1,5 @@
 body {
-    background: radial-gradient(circle, #f0f4f8, #cfd8e3);
+    background: radial-gradient(circle, #bccbda, #5d7696);
 }
 
 table {
@@ -19,7 +19,7 @@ table {
     display: flex;
     justify-content: center;
     background-color: #f0f4f8;
-    background: radial-gradient(circle, #f0f4f8, #cfd8e3);
+    background: radial-gradient(circle, #d9eafa, #5d7696);
     margin-bottom: .5rem;
     padding: .5rem;
     position: sticky;
@@ -35,10 +35,17 @@ table {
 }
 
 .navContent:hover {
-    text-decoration: underline;
     transform: scale(1.1);
     cursor: pointer;
-    color: #4a90e2;
+}
+
+.navContent a {
+    text-decoration: none;
+    color: #3b4c66;
+}
+
+.navContent a:visited {
+    color: #3b4c66;
 }
 
 .header, caption {
@@ -46,7 +53,7 @@ table {
     font-weight: bold;
     color: #2f3b52;
     background-color: #f0f4f8;
-    background: radial-gradient(circle, #f0f4f8, #cfd8e3);
+    background: radial-gradient(circle, #d9eafa, #5d7696);
     margin-bottom: .5rem;
     text-align: center;
 }

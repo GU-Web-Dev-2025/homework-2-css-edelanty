@@ -1,47 +1,97 @@
 body {
-    background: radial-gradient(circle, linen, burlywood);
+    background: radial-gradient(circle, #f0f4f8, #cfd8e3);
 }
 
 table {
-    border: solid black 2px; 
+    border: solid #2f3b52 2px; 
     border-spacing: 15px; 
     text-align: center;
 }
 
 #personalImage {
-    border: solid #ddd 3px;
+    border: solid #5a6b8c 3px;
     border-radius: 5%;
     width: 150px;
     height: 225px;
 }
 
-.header {
+.navBar {
+    display: flex;
+    justify-content: center;
+    background-color: #f0f4f8;
+    background: radial-gradient(circle, #f0f4f8, #cfd8e3);
+    margin-bottom: .5rem;
+    padding: .5rem;
+    position: sticky;
+    top: 0;
+}
+
+.navContent {
+    display: inline-block;
+    margin: 0 1rem;
+    font-size: larger;
+    font-weight: bold;
+    color: #3b4c66;
+}
+
+.navContent:hover {
+    text-decoration: underline;
+    transform: scale(1.1);
+    cursor: pointer;
+    color: #4a90e2;
+}
+
+.header, caption {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: #2f3b52;
+    background-color: #f0f4f8;
+    background: radial-gradient(circle, #f0f4f8, #cfd8e3);
+    margin-bottom: .5rem;
     text-align: center;
 }
 
 .paragraphs {
-    background-color: oldlace;
-    border: 5px solid peru;
+    background-color: #81a0c9;
+    border: 3px solid #5d7fc4;
+    color: #294061;
     padding: 2rem;
     border-radius: 4px;
     font-size: larger;
     text-align: center;
-    text-shadow: 5px 5px 1rem;
+    text-shadow: .3rem .3rem .8rem #e0e7ef;
+}
+
+#mainFlex {
+    display: flex;
+    column-gap: 1rem;
 }
 
 #summaryFlex {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+    border: solid #5a6b8c 3px;
+    padding: 1rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
 }
 
 #summaryText {
-    flex: 0 0 50%;
+    max-width: 35rem;
+    min-width: 20rem;
+    align-self: flex-start;
 }
 
 #summaryImage {
+    margin-top: 2rem;
+}
+
+#mainContentFlex {
     display: flex;
-    justify-content: center;
-    flex: auto 60% 30%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex: 1 0 55%;
+    border: solid #5a6b8c 3px;
+    padding: 1rem;
 }

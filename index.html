@@ -4,45 +4,126 @@
     <!--
     Evan Delanty
     Web Development
-    Homework 1
-    9/9/2025
+    Homework 2
+    9/25/2025
     -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="resources/favicon-48.png">
+    <link rel="stylesheet" href="styles.css">
     <title>Introduction</title>
 </head>
 <body>
-    <h1>Introduction</h1>
-    <h2>Summary</h2>
-    <p>My name is Evan Delanty and I'm a senior, fulltime Computer Science student at Gonzaga University!</p>
-    <p>Below is a simple CV showing my project and work experience built during my time at school.</p>
-    <img src="resources/CV_Img.jpeg" alt="Photo of Myself (Evan Delanty)" width="150" height="225" style="border: solid black 3px; border-radius: 10pt;">
-    <section>
+    <section id="interests"></section>
+        <h1>Introduction</h1>
+        <h2>Summary</h2>
+        <p>My name is Evan Delanty and I'm a senior, fulltime Computer Science student at Gonzaga University!</p>
+        <p>Below is a simple CV showing my project and work experience built during my time at school.</p>
+        <img id="personalImage" src="resources/CV_Img.jpeg" alt="Photo of Myself (Evan Delanty)">
         <h3>Technical Skills:</h3> <!--Skills Lists-->
-        <ul>
-            <li><em>Programming Related:</em>
-                <ul>
-                    <li>
-                        <p>Java, C, C++, Kotlin, Python, PostgreSQL, Git, Linux, Cloud Computing.</p>
-                    </li>
-                </ul>
-            </li>
-            <li> <em>Other:</em>
-                <ul>
-                    <li>
-                        <p>Microsoft 365, Computer Hardware, IT, UI/UX Design.</p>
-                    </li>
-                </ul>
-            </li>
-        </ul>
+        <div id="technical">
+            <ul>
+                <li><em>Programming Related:</em>
+                    <ul>
+                        <li>
+                            <p>Java, C, C++, Kotlin, Python, PostgreSQL, Git, Linux, Cloud Computing.</p>
+                        </li>
+                    </ul>
+                </li>
+                <li> <em>Other:</em>
+                    <ul>
+                        <li>
+                            <p>Microsoft 365, Computer Hardware, IT, UI/UX Design.</p>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
         <h3>Non-Techincal Interests:</h3>
-        <ul>
-            <li>Bouldering, Biking, Cooking, Golf, Tennis, Longboarding, and Gaming.</li>
-        </ul>
+        <div id="non-technical">
+            <ul>
+                <li>Bouldering, Biking, Cooking, Golf, Tennis, Longboarding, and Gaming.</li>
+            </ul>
+        </div>
     </section>
-    <h4><a href="career.html">Career and Projects</a></h4>
-    <h4><a href="education.html">Education and Work Experience</a></h4>
-    <h4><a href="interests.html">Hobbies and Interests</a></h4>
+    <!-- Education Section -->
+    <section id="education">
+        <!--Education Table-->
+        <table>
+            <caption><strong><em>Education</em></strong></caption>
+            <tr> <!--Row 1-->
+                <th>Degree</th>
+                <th>Institute</th>
+                <th>Date</th>
+            </tr>
+            <tr> <!--Row 2-->
+                <td>BS, Computer Science</td>
+                <td>Gonzaga University</td>
+                <td>August 2022 - May 2026</td>
+            </tr>
+            <tr> <!--Row 3-->
+                <td>High School</td>
+                <td>Realms High School</td>
+                <td>September 2018 - June 2022</td>
+            </tr>
+        </table>
+    </section>
+    <!-- Career Section -->
+    <section id="career">
+        <table id="projects">
+            <caption><strong><em>Favorite Projects</em></strong></caption>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Github</th>
+            </tr>
+            <tr>
+                <td>Chess GUI</td>
+                <td>A solo, test driven development motivated challenge to help write readable, testable, and well structured code with a well laid out codebase. Utilized the JUnit Testing Harness to practice the model-view-controller (MVC) approach alongside the Java Swing library for a simple and responsive frontend.</td>
+                <td><a href="https://github.com/edelanty/Chess-Gui">Chess GUI</a></td>
+            </tr>
+            <tr>
+                <td>Gonzaga Interactive Map</td>
+                <td>Developed an Android app using Kotlin and Android Studio that integrated Google Maps to let students pin and describe recommended food and study spots: main features include account-based ratings, like/dislike, and comments.</td>
+                <td><a href="https://github.com/edelanty/Gonzaga-Interactive-Map/blob/main/Gonzaga%20Interactive%20Map%20Features%20and%20Functionality.docx.pdf">Feature & Functionality Doc</a></td>
+            </tr>
+        </table>
+        <table>
+            <caption><strong><em>Work Experience</em></strong></caption>
+            <tr> <!--Row 1-->
+                <th>Title</th>
+                <th>Company</th>
+                <th>Date</th>
+            </tr>
+            <tr> <!--Row 2-->
+                <td>Barista</td>
+                <td>Brasada Ranch</td>
+                <td>May 2024 - Aug 2025 <em>Seasonal</em></td>
+            </tr>
+            <tr> <!--Row 3-->
+                <td>Numerous Odd-Jobs</td>
+                <td>Self Employed</td>
+                <td>2014 - 2024</td>
+            </tr>
+        </table>
+    </section>
+    <!-- Interests Section -->
+    <section id="interests">
+        <h1>Hobbies and Interests</h1>
+        <ol type="I">
+            <li>Biking</li>
+            
+            <li><p>Bouldering</p>
+                <a href="https://www.gettyimages.com/photos/round-boulder">
+                    <img src="resources/boulder.jpg" alt="Image of a Boulder" width="100" height="100">
+                </a>
+            </li>
+            <li>Cooking</li>
+            <li>Golf</li>
+            <li>Tennis</li>
+            <li>Longboarding</li>
+            <li>Gaming</li>
+        </ol>
+    </section>
 </body>
 </html>

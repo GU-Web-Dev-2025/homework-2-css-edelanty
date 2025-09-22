@@ -1,0 +1,12 @@
+table {
+    border: solid black 2px; 
+    border-spacing: 15px; 
+    text-align: center;
+}
+
+#personalImage {
+    border: solid black 3px; 
+    border-radius: 10pt;
+    width: 150px;
+    height: 225px;
+}

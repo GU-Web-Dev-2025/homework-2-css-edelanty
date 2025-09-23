@@ -1,12 +1,13 @@
 :root {
     --header-text-color: #1d174e;
-    --content-background-color: #e2e4e7;
-    --paragraph-background-color: #5d7fc4;
+    --content-background-color: #c5d0e4;
+    --background-color: #5d7fc4;
     --text-color-main: #294061;
+    --paragraph-background-color: #819ac9;
 }
 
 body {
-    background: radial-gradient(circle, #bccbda, var(--paragraph-background-color));
+    background: radial-gradient(circle, #bccbda, var(--background-color));
 }
 
 table {
@@ -25,7 +26,7 @@ table {
 .navBar {
     display: flex;
     justify-content: center;
-    background: radial-gradient(circle, #7746eb, var(--paragraph-background-color));
+    background: radial-gradient(circle, #7746eb, var(--background-color));
     margin-bottom: .5rem;
     padding: .5rem;
     position: sticky;
@@ -60,13 +61,13 @@ table {
     font-weight: bold;
     color: #1d174e;
     background-color: #f0f4f8;
-    background: radial-gradient(circle, #7746eb, var(--paragraph-background-color));
+    background: radial-gradient(circle, #7746eb, var(--background-color));
     margin-bottom: .5rem;
     text-align: center;
 }
 
 .paragraphs {
-    background-color: #819ac9;
+    background-color: var(--paragraph-background-color);
     border: 3px solid #5d7fc4;
     color: var(--text-color-main);
     padding: 2rem;
@@ -102,7 +103,6 @@ table {
 #summaryText {
     max-width: 35rem;
     min-width: 20rem;
-    align-self: flex-start;
 }
 
 #summaryImage {
@@ -119,11 +119,21 @@ table {
     border-radius: 1rem;
     padding: 1rem;
     color: var(--text-color-main);
+    background-color: var(--paragraph-background-color);
 }
 
 .list h3 {
     text-align: center;
     font-family: monospace;
+}
+
+.listItems {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    list-style-type: square;
+    font-family: monospace;
+    font-size: large;
 }
 
 #mainContentFlex {

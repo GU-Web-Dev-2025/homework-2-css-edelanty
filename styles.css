@@ -4,6 +4,7 @@
     --background-color: #5d7fc4;
     --text-color-main: #294061;
     --paragraph-background-color: #819ac9;
+    --border-color: var(--border-color);
 }
 
 body {
@@ -17,7 +18,7 @@ table {
 }
 
 #personalImage {
-    border: solid #5a6b8c 3px;
+    border: solid var(--border-color) 3px;
     border-radius: 5%;
     width: 150px;
     height: 225px;
@@ -91,7 +92,7 @@ table {
 
 #summaryFlex {
     display: flex;
-    border: solid #5a6b8c 3px;
+    border: solid var(--border-color) 3px;
     padding: 1rem;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -115,7 +116,7 @@ table {
 }
 
 .list {
-    border: solid #5a6b8c 3px;
+    border: solid var(--border-color) 3px;
     border-radius: 1rem;
     padding: 1rem;
     color: var(--text-color-main);
@@ -139,9 +140,22 @@ table {
 #mainContentFlex {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    border: solid #5a6b8c 3px;
+    justify-content: flex-start;
+    border: solid var(--border-color) 3px;
     border-radius: 2rem;
     background-color: var(--content-background-color);
+}
+
+#workEducationFlex {
+    display: flex;
     padding: 1rem;
+    gap: .5rem;
+}
+
+.workEducationTable {
+    border: solid var(--border-color) 3px;
+    border-radius: 1rem;
+    padding: 1rem;
+    color: var(--text-color-main);
+    background-color: var(--paragraph-background-color);
 }

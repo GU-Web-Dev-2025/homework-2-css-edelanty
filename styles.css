@@ -1,3 +1,10 @@
+/* 
+Evan Delanty
+Web Development
+Homework 2
+9/25/2025
+*/
+
 :root {
     --header-text-color: #1d174e;
     --content-background-color: #c5d0e4;
@@ -114,6 +121,8 @@ table {
 #summaryText {
     flex: 1 0 300px;
     text-align: justify;
+    min-width: 10rem;
+    max-width: 40rem;
 }
 
 .image {

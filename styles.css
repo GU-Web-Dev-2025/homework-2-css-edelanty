@@ -1,27 +1,24 @@
 :root {
     --header-text-color: #1d174e;
     --content-background-color: #c5d0e4;
-    --background-color: #5d7fc4;
+    --background-color: #4e699e;
     --text-color-main: #294061;
     --paragraph-background-color: #819ac9;
-    --border-color: var(--border-color);
+    --border-color: #7f95c2;
+    --table-first-color: #819ac9;
+    --table-second-color: #354f82;
 }
 
 body {
     background: radial-gradient(circle, #bccbda, var(--background-color));
 }
 
+/* Top Part */
+
 table {
     border: solid #2f3b52 2px; 
     border-spacing: 15px; 
     text-align: center;
-}
-
-#personalImage {
-    border: solid var(--border-color) 3px;
-    border-radius: 5%;
-    width: 150px;
-    height: 225px;
 }
 
 .navBar {
@@ -32,6 +29,7 @@ table {
     padding: .5rem;
     position: sticky;
     top: 0;
+    z-index: 2;
 }
 
 .navContent {
@@ -78,9 +76,19 @@ table {
     text-shadow: .3rem .3rem .8rem #e0e7ef;
 }
 
+/* End of Top Part */
+/* Left Part */
+
 #mainFlex {
     display: flex;
     column-gap: 1rem;
+}
+
+#personalImage {
+    border: solid var(--border-color) 3px;
+    border-radius: 5%;
+    width: 150px;
+    height: 225px;
 }
 
 #summaryHeader {
@@ -106,11 +114,11 @@ table {
     min-width: 20rem;
 }
 
-#summaryImage {
+.image {
     align-self: center;
 }
 
-.skillsList {
+#skillsList {
     display: flex;
     gap: 1rem;
 }
@@ -118,6 +126,7 @@ table {
 .list {
     border: solid var(--border-color) 3px;
     border-radius: 1rem;
+    justify-content: center;
     padding: 1rem;
     color: var(--text-color-main);
     background-color: var(--paragraph-background-color);
@@ -131,11 +140,15 @@ table {
 .listItems {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 2rem;
     list-style-type: square;
     font-family: monospace;
     font-size: large;
 }
+
+/* Left Part */
+/* Right Part */
 
 #mainContentFlex {
     display: flex;
@@ -143,6 +156,7 @@ table {
     justify-content: flex-start;
     border: solid var(--border-color) 3px;
     border-radius: 2rem;
+    padding: 1rem;
     background-color: var(--content-background-color);
 }
 
@@ -152,10 +166,39 @@ table {
     gap: .5rem;
 }
 
-.workEducationTable {
+.table {
     border: solid var(--border-color) 3px;
     border-radius: 1rem;
+    padding: 1rem;
+    border-collapse: collapse;
+    color: var(--text-color-main);
+}
+
+tr:nth-child(even) {
+    background-color: var(--table-second-color);
+    opacity: .7;
+    color: white;
+}
+
+#interestsListFlex {
+    display: flex;
+    gap: 1rem;
+}
+
+#interests {
+    border: solid var(--border-color) 3px;
+    border-radius: 1rem;
+    justify-content: center;
     padding: 1rem;
     color: var(--text-color-main);
     background-color: var(--paragraph-background-color);
 }
+
+#hobbyImage {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    right: 1rem;
+}
+
+/* End of Right Part */

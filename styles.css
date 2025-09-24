@@ -184,7 +184,7 @@ table {
     padding: 1rem;
     border-collapse: collapse;
     color: var(--text-color-main);
-    font-size: larger;
+    font-size: medium;
 }
 
 tr:nth-child(even) {
